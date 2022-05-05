@@ -1,0 +1,112 @@
+.container__contato {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.titulo__contato {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.input__contato {
+    background-color: var(--fundo-secundario);
+    border: 2px solid transparent;
+    color: var(--texto);
+    height: 42px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 450px;
+}
+
+.msg__contato {
+    background-color: var(--fundo-secundario);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: var(--texto);
+    height: 150px;
+    padding: 10px;
+    width: 450px;
+}
+
+.label-float{
+    padding-top: 13px;
+    position: relative;
+}
+
+.label-float input, .label-float textarea{
+    border: 0;
+    border-bottom: 2px solid lightgrey;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    min-width: 180px;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+    -webkit-transition: all .3s ease-out;
+}
+
+.label-float input:focus, textarea{
+    border-bottom: 2px solid var(--hover);
+}
+
+.label-float input::placeholder, .label-float textarea::placeholder{
+    color:transparent;
+}
+
+.label-float label{
+    left: 0;
+    margin-top: 13px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid + label, .label-float textarea:required:invalid + label{
+    color: var(--texto);
+}
+
+.label-float input:focus:required:invalid, .label-float textarea:focus:required:invalid{
+    border-bottom: 2px solid var(--hover);
+}
+
+.label-float input:required:invalid + label:before, .label-float textarea:required:invalid + label:before{
+    content: '*';
+} 
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label, .label-float textarea:not(:placeholder-shown) + label{
+    color: #3951b2;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.botao__contato {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid var(--texto);
+    color: var(--texto);
+    cursor: pointer;
+    padding: 10px;
+}
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    form {
+        text-align: center;
+    }
+
+    .input__contato, .input__msg {
+        width: 100%;
+    }
+
+    .titulo__contato {
+        font-size: 26px
+    }
+}

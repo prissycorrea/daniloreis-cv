@@ -1,0 +1,84 @@
+/*-----Fonts-----*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&display=swap');
+
+/*-----Reset-----*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Variáveis-----*/
+:root {
+    --fundo-principal: #161619;
+    --fundo-secundario: #202233;
+    --hover: #2081c3;
+    --texto: #efefef;
+    --titulo: #2081c3;
+}
+
+/*-----Configurações gerais-----*/
+body {
+    align-items: center;
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    max-width: 100%
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+textarea {
+    resize: none;
+}
+
+:target {
+    scroll-margin-top: .8em;
+}
+
+::selection {
+    background-color: black;
+    color: var(--hover);
+}
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    main {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .container__geral {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*-----TABLET-----*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        width: 100%;
+    }
+
+    .container__geral {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}

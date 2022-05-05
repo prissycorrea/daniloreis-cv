@@ -1,0 +1,156 @@
+.container__experiencia {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 90px;
+}
+
+.titulo__experiencia {
+    color: var(--texto);
+    font-size: 36px;
+    margin-bottom: 30px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.content__experiencia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 30px;
+    justify-content: center;
+    width: 60vw;
+}
+
+.box__experiencia .card__experiencia .icon {
+    background: var(--hover);
+    border-radius: 15px;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.box__experiencia .card__experiencia .icon .fa {
+    color: var(--texto);
+    font-size: 80px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box__experiencia .card__experiencia .slide {
+    border-radius: 15px;
+    height: 200px;
+    transition: 0.5s;
+    width: 300px;
+}
+
+.box__experiencia .card__experiencia .slide.slide1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: .7s;
+    transform: translateY(100px);
+    z-index: 1;
+}
+
+.box__experiencia .card__experiencia:hover .slide.slide1 {
+    transform: translateY(0px);
+}
+
+.box__experiencia .card__experiencia .slide.slide2 {
+    align-items: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    transform: translateY(-100px);
+    transition: .8s;
+}
+
+.box__experiencia .card__experiencia:hover .slide.slide2 {
+    transform: translateY(0);
+}
+
+.box__experiencia .card__experiencia .slide.slide2::after {
+    background: var(--hover);
+    bottom: 15px;
+    content: "";
+    height: 2px;
+    left: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 30px;
+}
+
+.box__experiencia .card__experiencia .slide.slide2 .texto__experiencia p {
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.box__experiencia .card__experiencia .slide.slide2 {
+    color: #414141;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.texto__experiencia {
+    padding: 5px;
+}
+
+.texto__experiencia--titulo {
+    font-size: 14px;
+}
+
+.texto__experiencia p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.down__experiencia--icon, .texto__experiencia--titulo {
+    color: var(--fundo-secundario);
+    font-size: 20px;
+    text-align: center;
+}
+
+.down__experiencia--icon {
+    margin-top: 20px;
+}
+
+.terminal__experiencia--icon {
+    background: var(--fundo-secundario);
+    color: var(--texto);
+    font-size: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.empresa__experiencia {
+    font-size: 16px;
+}
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    .titulo__experiencia {
+        font-size: 26px;
+    }
+}
+
+/*-----TABLET-----*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .titulo__experiencia {
+        font-size: 26px;
+    }
+}

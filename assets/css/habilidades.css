@@ -1,0 +1,137 @@
+.container__skills {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 90px;
+}
+
+.descr__skills {
+    height: 150px;
+    width: 40vw;
+}
+
+.article__skills p {
+    color: #C2C1C2;
+    font-size: 20px;
+}
+
+.skills__titulo {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 36px;
+    color: var(--texto);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.descr__skills, .nome__skills, .info__skills {
+    text-align: center;
+}
+
+.nome__skills {
+    display: block;
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--hover);
+}
+
+.box__skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 50px;
+}
+
+.card__skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #191919;
+    border-radius: 5px;
+    transition: 0.8s ease;
+    background-color: #212121;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 20%;
+    height: 150px;
+}
+
+.card__skills:hover {
+    border: 1px solid var(--hover);
+}
+
+.card__skills {
+    min-width: 80px;
+}
+
+.card__skills i {
+    color: var(--hover);
+    font-size: 65px;
+}
+
+.card__skills i:hover {
+    color: var(--texto);
+}
+
+.info__skills {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    .skills__titulo {
+        font-size: 26px;
+    }
+
+    .container__skills {
+        flex-direction: column;
+    }
+
+    .box__skills {
+        padding-top: 250px;
+        width: 100%;
+    }
+
+    .info__skills p {
+        text-align: center !important;
+        width: 100vw !important;
+
+    }
+
+    .info__skills {
+        font-size: 14px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .nome__skills {
+        text-align: center;
+    }
+
+    .card__skills {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/*----- TABLET -----*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .skills__titulo {
+        font-size: 26px;
+    }
+
+    .container__skills {
+        flex-direction: column;
+    }
+
+    .box__skills {
+        padding-top: 50px;
+    }
+
+    .info__skills {
+        font-size: 14px !important;
+    }
+}

@@ -1,0 +1,36 @@
+.rodape {
+    background-color: var(--fundo-secundario);
+    color: var(--texto);
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: var(--hover);
+}
+
+.rodape a:hover {
+    color: var(--texto)
+}
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    footer {
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .rodape p {
+        font-size: 12px;
+    }
+
+    .rodape a {
+        font-size: 12px;
+    }
+}

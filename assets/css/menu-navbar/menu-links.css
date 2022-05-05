@@ -1,0 +1,56 @@
+.menu__superior--links {
+    display: flex;
+    gap: 15px;
+}
+
+.menu__superior--link {
+    color: var(--texto);
+    font-weight: 200;
+    font-size: 18px;
+    height: 30px;
+    margin-right: 30px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu__superior--link:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.active {
+    font-weight: 700;
+}
+
+/*-----ANIMAÇÃO DOS LINKS DO  MENU----*/
+.underline__center--animation {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+}
+.underline__center--animation:before {
+    background: var(--hover);
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 51%;
+    position: absolute;
+    right: 51%;
+    transition-duration: 0.3s;
+    transition-property: left, right;
+    transition-timing-function: ease-out;
+    z-index: -1;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: left, right;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.underline__center--animation:hover:before, .underline__center--animation:focus:before, .underline__center--animation:active:before {
+    left: 0;
+    right: 0;
+}

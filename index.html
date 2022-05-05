@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Priscilla Correa">
+    <meta name="description" content="Currículo virtual de Danilo Freitas dos Reis, SRE DevOps.">
+    <meta name="keywords" content="developer, desenvolvedor, devops, infra, infraestrutura, linux, aws">
+    <meta name="robots" content="index, nofollow">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <link rel="stylesheet" href="./assets/css/conf-gerais.css">
+    <link rel="stylesheet" href="./assets/css/menu-navbar/logo-nome.css">
+    <link rel="stylesheet" href="./assets/css/menu-navbar/menu-links.css">
+    <link rel="stylesheet" href="./assets/css/menu-navbar/menu.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/scroll.css">
+    <link rel="stylesheet" href="./assets/css/habilidades.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
+    <link rel="stylesheet" href="./assets/css/formacao.css">
+    <link rel="stylesheet" href="./assets/css/experiencia.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Danilo Freitas dos Reis | SRE DevOps</title>
+</head>
+
+<body onload="mostraDescricao(), reveal(), active()">
+    <div class="container__geral" id="sobre">
+        <!--Menu superior-->
+        <nav class="menu__superior">
+            <!--Logo typewriter-->
+            <div class="menu__superior--logo">
+                <p class="menu__superior--texto"><i class="fa-solid fa-terminal"></i>Danilo_Freitas</p>
+            </div>
+            <!--Links do menu-->
+            <div class="menu__superior--links">
+                <a class="underline__center--animation menu__superior--link" href="#sobre" ">Sobre</a>
+                <a class="underline__center--animation menu__superior--link" " href="#skills">Habilidades</a>
+                <a class="underline__center--animation menu__superior--link" href="#formacao" ">Formação</a>
+                <a class="underline__center--animation menu__superior--link" href="#experiencia" ">Experiência</a>
+            </div>
+        </nav>
+        <!--Cabeçalho, sobre, contato-->
+        <header class="cabecalho" id="sobre">
+            <!--Imagem do cabeçalho-->
+            <div class="cabecalho__foto--area d2-left">
+                <img class="cabecalho__foto--img" src="./assets/img/stars.svg">
+            </div>
+            <!--Dados principais - cabeçalho-->
+            <div class="cabecalho__descricao">
+                <h1 class="cabecalho__titulo d2-top">Danilo Freitas</h1>
+                <p class="cabecalho__subtitulo d2-top">SRE DevOps</p>
+                <p class="cabecalho__texto d2-right">Graduado em Gestão da Tecnologia da Informação pela FATEC, com conhecimento em Linux, ferramentas DevOps e automações Ansible e Terraform. A mais de 8 anos atuando na área de T.I. em diversos segmentos empresariais.</p>
+                <!--Botões download cv e contato-->
+                <span class="cabecalho__botoes d3-bottom">
+                    <a href="#contato"><button class="btn cabecalho__botao--contato botao__efeito">Contato</button></a>
+                    <a href="./assets/download/cv-danilo-freitas.pdf" download="cv-danilo-freitas.pdf" target="_blank"><button class="btn cabecalho__botao--cv botao__efeito">CV Download</button></a>
+                </span>
+                <!--Íncones das redes sociais-->
+                <span class="cabecalho__redes d2-right">
+                    <a href="https://www.linkedin.com/in/danilofreitasdosreis/" target="_blank"><i class="fa-brands fa-linkedin redes__linkedin redes__botao "></i></a>
+                    <a href="https://github.com/danilofreytas" target="_blank"><i class="fa-brands fa-github-square redes__github redes__botao" id="skills"></i></a>
+                </span>
+            </div>
+        </header>
+        <!--Conteúdo principal-->
+        <main>
+            <!--Habilidades-->
+            <section class="container__skills">
+                <article class="article__skills">
+                    <h2 class="skills__titulo d2-left">Habilidades</h2>
+                    <div class="descr__skills d3-bottom">
+                        <spam class="nome__skills"></spam>
+                        <p class="info__skills">passe o cursor nos elementos para saber mais</p>
+                    </div>
+                </article>
+                <!-- AWS -->
+                <div class="box__skills">
+                    <div class="card__skills aws d2-top">
+                        <i class="devicon-amazonwebservices-original"></i>
+                    </div>
+                    <!-- Linux -->
+                    <div class="card__skills linux d2-top">
+                        <i class="devicon-linux-plain"></i>
+                    </div>
+                    <!-- Ansible -->
+                    <div class="card__skills ansible d2-top">
+                        <i class="devicon-ansible-plain"></i>
+                    </div>
+                    <!-- Git -->
+                    <div class="card__skills git d2-top">
+                        <i class="devicon-git-plain"></i>
+                    </div>
+                    <!-- Terraform -->
+                    <div class="card__skills terraform d3-bottom">
+                        <i class="devicon-terraform-plain"></i>
+                    </div>
+                    <!-- Docker -->
+                    <div class="card__skills docker d3-bottom">
+                        <i class="devicon-docker-plain"></i>
+                    </div>
+                    <!-- Kubernetes -->
+                    <div class="card__skills kubernetes d3-bottom">
+                        <i class="devicon-kubernetes-plain"></i>
+                    </div>
+                    <!-- CloudFormation -->
+                    <div class="card__skills cloudform d3-bottom">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                </div>
+            </section>
+            <!--Formação-->
+            <div id="formacao"></div>
+            <section class="container__formacao">
+                <h2 class="titulo__formacao d2-top">Formação Profissional</h2>
+                <div class="itens__formacao">
+                    <!--Graduação Fatec-->
+                    <div class="box__formacao d2-left">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div class="conteudo__formacao">
+                            <h2>Tecnologia em gestão de tecnologia da informação</h2>
+                            <p>FATEC <br> 2017 - 2020</p>
+                        </div>
+                    </div>
+                    <!--Kubernetes 4Linux-->
+                    <div class="box__formacao d2-left">
+                        <i class="devicon-kubernetes-plain"></i>
+                        <div class="conteudo__formacao">
+                            <h2>Kubernetes: Orquestração de Ambientes Escaláveis</h2>
+                            <p>4Linux<br></p>
+                        </div>
+                    </div>
+                    <!--DevOps 4Linux-->
+                    <div class="box__formacao d2-left">
+                        <i class="fa-solid fa-terminal"></i>
+                        <div class="conteudo__formacao">
+                            <h2>Infraestrutura Agil com Práticas DevOps</h2>
+                            <p>4Linux</p>
+                        </div>
+                    </div>
+                    <!--Kubernetes Novatec-->
+                    <div class="box__formacao d2-left">
+                        <i class="devicon-kubernetes-plain"></i>
+                        <div class="conteudo__formacao">
+                            <h2>Kubernetes</h2>
+                            <p>Novatec</p>
+                        </div>
+                    </div>
+                    <!--WebSphere IBM-->
+                    <div class="box__formacao d2-right">
+                        <i class="fa-solid fa-globe"></i>
+                        <div class="conteudo__formacao">
+                            <h2>WebSphere Application Server V9 Administration</h2>
+                            <p>IBM Trainning</p>
+                        </div>
+                    </div>
+                    <!--Linux Servers in cloud 4Linux-->
+                    <div class="box__formacao d2-right">
+                        <i class="devicon-linux-plain"></i>
+                        <div class="conteudo__formacao">
+                            <h2>Linux Security Servers in Cloud – 452 – LPI2</h2>
+                            <p>4Linux</p>
+                        </div>
+                    </div>
+                    <!--Linux security sysadmin 4Linux-->
+                    <div class="box__formacao d2-right">
+                        <i class="devicon-linux-plain"></i>
+                        <div class="conteudo__formacao">
+                            <h2>Linux Security SysAdmin in Cloud – 451 – LPI1</h2>
+                            <p>4Linux</p>
+                        </div>
+                    </div>
+                    <div class="box__formacao d2-right">
+                        <i class="devicon-linux-plain"></i>
+                        <div class="conteudo__formacao">
+                            <h2>Linux Fundamentals in Cloud– 450 – LPI1</h2>
+                            <p>4Linux</p>
+                        </div>
+                    </div>
+                <div>
+            </section>
+            <section class="container__experiencia">
+                <h2 class="titulo__experiencia d2-top"  id="experiencia">Experiência Profissional</h2>
+                <div class="content__experiencia">
+                    <!--Zup-->
+                    <div class="box__experiencia d2-right">
+                        <div class="card__experiencia">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <p class="texto__experiencia--titulo" aria-hidden="true"><i class="fa-solid fa-terminal terminal__experiencia--icon"></i><br>SRE DevOps <br><span class="empresa__experiencia">Zup</span> <br> <i class="fa-solid fa-angle-down down__experiencia--icon"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="texto__experiencia">
+                                    <p>Responsável pelo processo de implantação, monitoramento, dimensionamento e pelas tarefas operacionais necessárias ao liberar código. Desenvolvimento de processos de compilação seguros e eficientes (por exemplo, pipeline
+                                        de CI/CD), instrumentação código para gerar relatórios de métricas relevantes e executação ações operacionais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Dock-->
+                    <div class="box__experiencia d2-right">
+                        <div class="card__experiencia">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <p class="texto__experiencia--titulo" aria-hidden="true"><i class="fa-solid fa-desktop terminal__experiencia--icon"></i><br>Analista de infraest. de TI II <br><span class="empresa__experiencia">Dock</span><br>
+                                            <i class="fa-solid fa-angle-down down__experiencia--icon"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="texto__experiencia">
+                                    <p>Administração de servidores Linux RedHat; Monitoramento e gestão do ambiente Cloud Microsoft Azure; Monitoramento e gerenciamento de infraestrutura das aplicações de TomCat e prevenção a fraude; Administração e monitoramentos
+                                        de serviços com o Splunk, Datadog e desenvolvimento de automatizações utilizando Ansible, Shell Script e Terraform.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Valid-->
+                    <div class="box__experiencia d2-right">
+                        <div class="card__experiencia">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <p class="texto__experiencia--titulo" aria-hidden="true"><i class="fa-solid fa-linux  terminal__experiencia--icon"></i><br>Analista de infraest. Linux<br><span class="empresa__experiencia"> Valid</span><br> <i class="fa-solid fa-angle-down down__experiencia--icon"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="texto__experiencia">
+                                    <p>Administração de servidores Linux Ubuntu, RedHat, CentOS; Elaboração de ambiente DevOps Kubernetes; Implantação e Administração de ambiente Cloud AWS; Operação DevOps; Redes: Endereçamento IP, roteamento, VLANs, Peering,
+                                        VPC, VPN; Administração de ambiente de Banco de Dados Postgres; Administração do Zabbix; Criação de Shell Script para desenvolvimento de automatizações.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Certsys-->
+                    <div class="box__experiencia d2-left">
+                        <div class="card__experiencia">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <p class="texto__experiencia--titulo" aria-hidden="true"><i class="fa-solid fa-laptop terminal__experiencia--icon"></i><br>Consultor Was <br><span class="empresa__experiencia">Certsys <span class="empresa__experiencia"></span><br><i class="fa-solid fa-angle-down down__experiencia--icon"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="texto__experiencia">
+                                    <p>Administração de soluções IBM como WebSphere Application Server, Integration Bus (Broker), MQ, MobileFirst, BPM, WSRR, HTTPServer e Monitor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--SBF suporte-->
+                    <div class="box__experiencia d2-left">
+                        <div class="card__experiencia">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <p class="texto__experiencia--titulo" aria-hidden="true"><i class="fa-solid fa-computer-mouse terminal__experiencia--icon"></i><br>Analista de Suporte <br><span class="empresa__experiencia"> Grupo SBF</span><br> <i class="fa-solid fa-angle-down down__experiencia--icon"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="texto__experiencia">
+                                    <p>Execução de rotinas de produção e solução de incidentes. Atividades de mudanças nas áreas de Windows, Unix, SQL (Execução de scripts). Geração de relatórios de execução dos processos batch; Acompanhamento/Monitoração
+                                        de Links e contingências pela ferramenta Zabbix.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--SBF monitoramento-->
+                    <div class="box__experiencia d2-left">
+                        <div class="card__experiencia">
+                            <div class="slide slide1">
+                                <div class="content">
+                                    <div class="icon">
+                                        <p class="texto__experiencia--titulo" aria-hidden="true"><i class="fa-solid fa-keyboard terminal__experiencia--icon"></i><br>Assistente de Monitoramento <br> <span class="empresa__experiencia">Grupo SBF</span><br><i class="fa-solid fa-angle-down down__experiencia--icon"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide slide2">
+                                <div class="texto__experiencia">
+                                    <p>Responsável pelo processo de implantação, monitoramento, dimensionamento e pelas tarefas operacionais necessárias ao liberar código. Desenvolvimento de processos de compilação seguros e eficientes (por exemplo, pipeline
+                                        de CI/CD), instrumentação código para gerar relatórios de métricas relevantes e executação ações operacionais.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container__contato" id="contato">
+                <h2 class="titulo__contato d2-top">Contato</h2>
+                <span class="cabecalho__redes d2-top">
+                    <a href="https://www.linkedin.com/in/danilofreitasdosreis/" target="_blank"><i class="fa-brands fa-linkedin redes__linkedin redes__botao"></i></a>
+                    <a href="https://github.com/danilofreytas" target="_blank"><i class="fa-brands fa-github-square redes__github redes__botao"></i></a>
+                </span>
+                <form class="form__contato d3-bottom" method="POST" action="https://formspree.io/f/mzbokwdl">
+                    <div class="label-float">
+                        <input name="nome" class="input__contato input__nome" type="text" placeholder=" " required/>
+                        <label>Nome</label>
+                    </div>
+                    <div class="label-float">
+                        <input name="email" class="input__contato input__email" type="mail" placeholder=" " required/>
+                        <label>E-mail</label>
+                    </div>
+                    <div class="label-float">
+                        <input name="telefone" class="input__contato input__tel" type="tel" placeholder=" " required/>
+                        <label>Telefone</label>
+                    </div>
+                    <div class="label-float">
+                        <textarea name="msg" class="msg__contato input__msg" placeholder=" " required/></textarea>
+                        <label>Mensagem</label>
+                    </div>
+                    <button type="submit" class="botao__contato botao__efeito btn" value="enviar" onclick="enviarForm()">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <div class="rodape">
+            <footer>
+                <p>Designed & coded by <a href="https://www.linkedin.com/in/priscilla-correa-a31935157/" target="_blank">Priscilla Correa</a></p>
+            </footer>
+        </div>
+    </div>
+    <!--Import Font Awesone/ícones-->
+    <script src="https://kit.fontawesome.com/da1654f2ef.js" crossorigin="anonymous"></script>
+    <!--Import JavaScript para a página-->
+    <script src="./assets/js/skills.js"></script>
+    <script src="./assets/js/contato.js"></script>
+    <script src="./assets/js/menu-links.js"></script>
+    <!--Import jQuery-->
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+</body>
+</html>

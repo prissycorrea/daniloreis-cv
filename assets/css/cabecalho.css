@@ -1,0 +1,205 @@
+.cabecalho {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    margin: 110px 0;
+}
+
+.cabecalho__titulo {
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    font-size: 42px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.cabecalho__titulo::first-letter {
+    color: var(--titulo)
+}
+
+.cabecalho__subtitulo {
+    color: var(--titulo);
+    font-size: 26px;
+}
+
+.cabecalho__texto {
+    font-weight: 300;
+}
+
+.redes__botao {
+    color: var(--texto);
+    font-size: 45px;
+    transition: ease-in 0.1s all;
+}
+
+.redes__botao:hover {
+    color: var(--hover);
+    cursor: pointer;
+    transition: ease-in 0.1s all;
+}
+
+.btn {
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+.cabecalho__botao--contato,
+.cabecalho__botao--cv {
+    border: 2px solid var(--texto);
+    color: var(--texto);
+    cursor: pointer;
+}
+
+
+/*-----EFEITO BOTAO----- */
+.botao__efeito {
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transform: perspective(1px) translateZ(0);
+    transition-duration: 0.3s;
+    transition-property: color;
+    -webkit-transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: color;
+}
+
+.botao__efeito:before {
+    background: #2098D1;
+    border-radius: 5px;
+    bottom: 0;
+    color: var(--fundo-principal);
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    z-index: -1;
+    -webkit-transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.botao__efeito:hover,
+.botao__efeito:focus,
+.botao__efeito:active {
+    color: white;
+}
+
+.botao__efeito:hover:before,
+.botao__efeito:focus:before,
+.botao__efeito:active:before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+}
+
+@keyframes moveUndraw {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+
+/*----- SMARTPHONE -----*/
+@media only screen and (max-width: 767px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        height: 80vh;
+        justify-content: space-between;
+    }
+
+    .cabecalho__descricao {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cabecalho__foto--img {
+        width: 85%;
+        padding-left: 10%;
+        animation: moveUndraw 1.7s infinite alternate-reverse linear;
+    }
+
+    .cabecalho__texto {
+        padding: 25px 0;
+    }
+
+    .btn {
+        margin-bottom: 15px;
+    }
+
+}
+
+/*----- TABLET -----*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: space-between;
+        width: 75%;
+    }
+
+    .cabecalho__descricao {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 80%;
+    }
+
+    .cabecalho__foto--img {
+        animation: moveUndraw 1.7s infinite alternate-reverse linear;
+        width: 85%;
+        padding-left: 10%;
+    }
+
+    .cabecalho__texto {
+        padding: 25px 0;
+    }
+
+    .btn {
+        margin-bottom: 15px;
+    }
+}
+
+/*-----DESKTOP-----*/
+@media only screen and (min-width: 1024px) {
+    .cabecalho__descricao {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        justify-content: space-between;
+        text-align: center;
+        width: 40%;
+    }
+
+    .cabecalho__foto--img {
+        animation: moveUndraw 1.7s infinite alternate-reverse linear;
+        width: 80%;
+    }
+}

@@ -1,0 +1,31 @@
+/*-----Menu superior/Navbar-----*/
+.menu__superior {
+    align-items: center;
+    background-color: var(--fundo-principal);
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    justify-content: space-between;
+    opacity: 0.97;
+    padding: 25px 35px;
+    position: fixed;
+    top: 0;
+    width: calc(100% - 5px);
+    z-index: 99;
+}
+
+.menu__superior--texto, .menu__superior--texto i {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .menu__superior {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .menu__superior {
+        display: none;
+    }
+}

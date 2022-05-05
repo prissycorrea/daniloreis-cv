@@ -1,0 +1,27 @@
+.menu__superior--logo {
+    color: var(--texto);
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+/*-----ANIMAÇÃO DO LOGO-----*/
+.menu__superior--texto {
+    animation: 
+    escrevendo 3.5s steps(15, end),
+    cursor .5s infinite;
+    border-right: 2.5px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes escrevendo {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+  /* The typewriter cursor effect */
+@keyframes cursor {
+    0% { border-color: transparent }
+    50% { border-color: white}
+}
