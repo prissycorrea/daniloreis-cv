@@ -1,0 +1,11 @@
+---
+---
+
+- Tecnologia em Gestão de TI - FATEC (2017-2020)
+- Kubernetes - 4Linux
+- Infraestrutura Ágil com DevOps - 4Linux
+- Kubernetes - Novatec
+- WebSphere V9 - IBM
+- Linux Security Servers in Cloud – 452 – LPI2 - 4Linux
+- Linux Security SysAdmin – 451 – LPI1 - 4Linux
+- Linux Fundamentals – 450 – LPI1 - 4Linux

@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: prissycorrea/daniloreis-cv
+  branch: main
+
+media_folder: "assets/img/uploads"
+public_folder: "/assets/img/uploads"
+
+collections:
+  - name: "sobre"
+    label: "Sobre Danilo"
+    files:
+      - label: "Cabeçalho"
+        name: "sobre"
+        file: "conteudo/sobre.md"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "string" }
+          - { label: "Descrição", name: "body", widget: "markdown" }
+
+  - name: "formacao"
+    label: "Formação Profissional"
+    files:
+      - label: "Formação"
+        name: "formacao"
+        file: "conteudo/formacao.md"
+        fields:
+          - { label: "Conteúdo", name: "body", widget: "markdown" }
+
+  - name: "experiencia"
+    label: "Experiência Profissional"
+    files:
+      - label: "Experiência"
+        name: "experiencia"
+        file: "conteudo/experiencia.md"
+        fields:
+          - { label: "Conteúdo", name: "body", widget: "markdown" }
