@@ -4,7 +4,6 @@ backend:
   branch: main
   site_domain: cvdaniloreis.netlify.app
 
-
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
 
