@@ -26,6 +26,21 @@
 </head>
 
 <body onload="mostraDescricao(), reveal(), active()">
+    <div id="conteudo"></div>
+
+<script>
+  fetch('conteudo/sobre.md')
+    .then(res => res.text())
+    .then(md => {
+      const title = md.match(/title:\s*(.*)/)[1];
+      const body = md.split('---')[2];
+      document.getElementById('conteudo').innerHTML = `
+        <h1>${title}</h1>
+        <p>${body}</p>
+      `;
+    });
+</script>
+
     <div class="container__geral" id="sobre">
         <!--Menu superior-->
         <nav class="menu__superior">
