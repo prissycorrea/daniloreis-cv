@@ -3,6 +3,7 @@ backend:
   repo: prissycorrea/daniloreis-cv
   branch: main
   site_domain: cvdaniloreis.netlify.app
+  base_url: daniloreiscv-qbhz7n8nb-prissycorreas-projects.vercel.app
 
 media_folder: "assets/img/uploads"
 public_folder: "/assets/img/uploads"
