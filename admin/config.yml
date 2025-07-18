@@ -19,20 +19,33 @@ collections:
           - { label: "Subtítulo", name: "subtitle", widget: "string" }
           - { label: "Descrição", name: "body", widget: "markdown" }
 
-  - name: "formacao"
+  - name: "formacoes"
     label: "Formação Profissional"
-    files:
-      - label: "Formação"
-        name: "formacao"
-        file: "conteudo/formacao.md"
-        fields:
-          - { label: "Conteúdo", name: "body", widget: "markdown" }
+    folder: "conteudo/formacoes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Curso", name: "curso", widget: "string" }
+      - { label: "Instituição", name: "instituicao", widget: "string" }
+      - { label: "Período", name: "periodo", widget: "string", required: false }
+      - { label: "Descrição", name: "body", widget: "markdown" }
 
-  - name: "experiencia"
-    label: "Experiência Profissional"
-    files:
-      - label: "Experiência"
-        name: "experiencia"
-        file: "conteudo/experiencia.md"
-        fields:
-          - { label: "Conteúdo", name: "body", widget: "markdown" }
+  - name: "experiencias"
+    label: "Experiências Profissionais"
+    folder: "conteudo/experiencias"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Cargo", name: "cargo", widget: "string" }
+      - { label: "Empresa", name: "empresa", widget: "string" }
+      - { label: "Descrição", name: "body", widget: "markdown" }
+
+  - name: "habilidades"
+    label: "Habilidades"
+    folder: "conteudo/habilidades"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome", name: "nome", widget: "string" }
+      - { label: "Categoria", name: "categoria", widget: "string", required: false }
+      - { label: "Descrição", name: "body", widget: "markdown", required: false }
